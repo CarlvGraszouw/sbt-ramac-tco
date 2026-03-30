@@ -23,11 +23,13 @@ Standalone interactive **Total Cost of Ownership (TCO)** calculator for RAMAC™
 
 3. **Enable GitHub Pages:** repo **Settings → Pages → Build and deployment → Source:** **Deploy from a branch**, Branch **main**, folder **/ (root)** → Save.
 
-4. **Client URL** (after a minute or two):
+4. **Client URL** (after GitHub finishes building Pages, usually 1–3 minutes):
 
    `https://YOUR_USERNAME.github.io/YOUR_REPO/`
 
    The page loads `index.html` automatically. Share that link for review; clients can use the calculator in the browser or print to PDF.
+
+   **This deployment:** [https://carlvgraszouw.github.io/sbt-ramac-tco/](https://carlvgraszouw.github.io/sbt-ramac-tco/)
 
 ### Optional: custom domain
 
