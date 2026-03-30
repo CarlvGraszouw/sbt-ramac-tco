@@ -1,0 +1,8 @@
+{
+  "name": "sbt-ramac-tco",
+  "private": true,
+  "description": "RAMAC TCO calculators — run build:standalone from this project folder",
+  "scripts": {
+    "build:standalone": "node scripts/build-standalone.mjs"
+  }
+}

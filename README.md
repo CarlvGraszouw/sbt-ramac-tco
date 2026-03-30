@@ -22,11 +22,25 @@ Share the hub or either calculator link; print to PDF from the browser works on 
 
 ## Email attachment (no link — single files)
 
-Regenerate after editing `assets/` or `at1l.html` / `at2.html` / `index.html`:
+Regenerate after editing `assets/` or `at1l.html` / `at2.html` / `index.html`.
 
-```bash
+**You must run commands from the project folder** (not your user home directory).
+
+PowerShell:
+
+```powershell
+cd "C:\CURSOR PROJECTS\SBT_Cost Of Ownership"
 node scripts/build-standalone.mjs
 ```
+
+Or use npm from the same folder:
+
+```powershell
+cd "C:\CURSOR PROJECTS\SBT_Cost Of Ownership"
+npm run build:standalone
+```
+
+Or double‑click **`build-standalone.bat`** in the project folder (Windows).
 
 This writes **fully self-contained** HTML (CSS, JavaScript, and logos inlined — no `assets/` folder needed):
 
