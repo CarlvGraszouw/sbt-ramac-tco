@@ -20,9 +20,29 @@ Interactive **Total Cost of Ownership (TCO)** models for RAMAC™ **AT1L** and *
 
 Share the hub or either calculator link; print to PDF from the browser works on each page.
 
-## Local use
+## Email attachment (no link — single files)
 
-Open `index.html` or `at1l.html` / `at2.html` in a browser. All asset paths are relative (`assets/…`).
+Regenerate after editing `assets/` or `at1l.html` / `at2.html` / `index.html`:
+
+```bash
+node scripts/build-standalone.mjs
+```
+
+This writes **fully self-contained** HTML (CSS, JavaScript, and logos inlined — no `assets/` folder needed):
+
+| File | Use |
+|------|-----|
+| `RAMAC-AT1L-TCO-standalone.html` | Attach for AT1L calculator only |
+| `RAMAC-AT2-TCO-standalone.html` | Attach for AT2 calculator only |
+| `RAMAC-TCO-Hub-standalone.html` | Optional cover / summary page (no calculator JS) |
+
+**Recipient instructions:** Save the attachment(s) to disk and **open in Chrome, Edge, or Firefox** (double-click). The calculator does **not** run inside most email preview panes; use a real browser.
+
+Attach **both** standalone files if the client needs AT1L and AT2.
+
+## Local use (development)
+
+Open `index.html` or `at1l.html` / `at2.html` in a browser. Asset paths use `assets/…`.
 
 ## Deploy updates
 
