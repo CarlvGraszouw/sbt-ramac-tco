@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="G-Matrix Systems — RAMAC™ AT1L total cost of ownership (TCO). Commercial proposal for SBT." />
+  <title>RAMAC™ AT1L TCO · G-Matrix for SBT</title>
+  <link rel="stylesheet" href="assets/tco.css" />
+</head>
+<body class="tco-single" data-project="at1l">
+  <div class="wrap">
+    <nav class="site-nav" aria-label="Page navigation">
+      <a href="index.html">Home</a>
+      <span class="sep" aria-hidden="true">|</span>
+      <a href="at2.html">RAMAC AT2 TCO model</a>
+    </nav>
+
+    <section class="hero">
+      <div class="brand-header">
+        <div class="brand-logos">
+          <img src="assets/g-matrix-logo.svg" alt="G-Matrix Systems" class="logo-gms" width="220" height="110" />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img src="assets/ramac-logo.svg" alt="RAMAC" class="logo-ramac" width="200" height="42" />
+        </div>
+        <div class="brand-text">
+          <p class="brand-company">G-Matrix Systems</p>
+          <p class="brand-product">RAMAC™ <span class="brand-product-sub">asset tracking product line</span></p>
+          <p class="brand-audience">Commercial proposal prepared for <strong>SBT</strong></p>
+        </div>
+      </div>
+      <h1>RAMAC™ AT1L — total cost of ownership (TCO)</h1>
+      <p>
+        <strong>Project 1 — AT1L</strong> cash bag embedded tracker: compact recovery / secondary tracker, daily heartbeat, low-power design.
+        Device purchase once, Sigfox annually, and <strong>battery + enclosure every 18-month service cycle</strong>.
+      </p>
+      <p>
+        Values are editable. Use <strong>per-device</strong> and <strong>fleet</strong> figures as needed. MRQ is validated with a warning below quantity.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Full-width tables</span>
+        <span class="pill">18-month service cycles</span>
+        <span class="pill">Per-cycle battery / enclosure escalation</span>
+        <span class="pill">Sigfox escalation editable</span>
+      </div>
+    </section>
+
+    <section class="card" id="card-at1l">
+      <div class="card-head">
+        <h2>RAMAC™ AT1L — inputs &amp; results</h2>
+        <p class="sub">
+          Embedded in the cash bag. Commercial logic: device once, Sigfox annual fee, service every 18 months with
+          <strong>battery + enclosure on every cycle</strong>.
+        </p>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="field">
+            <label for="at1l_qty">Quantity</label>
+            <input id="at1l_qty" type="number" min="1" step="1" value="1000" />
+            <small>Client fleet quantity for AT1L.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_years">Years</label>
+            <input id="at1l_years" type="number" min="1" max="15" step="1" value="5" />
+            <small>Default is 5 years.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_device">AT1L Unit Price (R)</label>
+            <input id="at1l_device" type="number" min="0" step="0.01" value="958.00" />
+            <small>Quoted at MRQ basis below.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_mrq">MRQ Basis</label>
+            <input id="at1l_mrq" type="number" min="1" step="1" value="1000" />
+            <small>Price basis: MRQ 1000.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_sigfox">Annual Sigfox Fee / Device (R)</label>
+            <input id="at1l_sigfox" type="number" min="0" step="0.01" value="481.24" />
+            <small>70 messages/day contract basis.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_sigfox_inc">Sigfox Annual Increase (%)</label>
+            <input id="at1l_sigfox_inc" type="number" min="0" step="0.01" value="5.00" />
+            <small>Editable. Default 5%.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_device_inc">Device Annual Increase (%)</label>
+            <input id="at1l_device_inc" type="number" min="0" step="0.01" value="5.00" />
+            <small>Indicative repeat-order pricing.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_battery">Battery Cost (R)</label>
+            <input id="at1l_battery" type="number" min="0" step="0.01" value="65.00" />
+            <small>Base battery replacement cost.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_battery_inc">Battery Annual Increase (%)</label>
+            <input id="at1l_battery_inc" type="number" min="0" step="0.01" value="6.00" />
+            <small>Per 18-month service cycle (1st, 2nd, 3rd…).</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_enclosure">Enclosure Cost (R)</label>
+            <input id="at1l_enclosure" type="number" min="0" step="0.01" value="45.00" />
+            <small>Base enclosure replacement cost.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_enclosure_inc">Enclosure Annual Increase (%)</label>
+            <input id="at1l_enclosure_inc" type="number" min="0" step="0.01" value="6.00" />
+            <small>Per 18-month service cycle (1st, 2nd, 3rd…).</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_service_months">Service Interval (Months)</label>
+            <input id="at1l_service_months" type="number" min="1" step="1" value="18" />
+            <small>Default: every 18 months.</small>
+          </div>
+
+          <div class="field">
+            <label for="at1l_enclosure_cycle">Enclosure Swap Every N Cycles</label>
+            <input id="at1l_enclosure_cycle" type="number" min="1" step="1" value="1" />
+            <small>AT1L = enclosure every cycle.</small>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button type="button" onclick="calculateAll()">Recalculate</button>
+          <button type="button" class="secondary" onclick="resetProject()">Reset AT1L defaults</button>
+        </div>
+
+        <div id="at1l_mrq_note" class="note"></div>
+        <div id="at1l_summary" class="metrics"></div>
+        <div id="at1l_breakdown" class="comp-breakdown"></div>
+
+        <h3 class="section-title">Annual fleet cost schedule</h3>
+        <div id="at1l_yearly_table"></div>
+
+        <h3 class="section-title">Service event schedule</h3>
+        <div id="at1l_service_table"></div>
+
+        <h3 class="section-title">Indicative repeat-order unit pricing</h3>
+        <div id="at1l_reorder_table"></div>
+
+        <h3 class="section-title">Cost distribution (model period)</h3>
+        <div id="at1l_chart" class="chart"></div>
+      </div>
+    </section>
+
+    <section class="compare-card">
+      <div class="footer-note">
+        <strong>Calculation basis:</strong> device purchase in year 1 only. Sigfox escalates per contract year on the base annual fee.
+        Service costs use per-cycle escalation (<code>base × (1 + rate)^k</code> per service cycle). Events are allocated to the calendar year of the event month.
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/tco-calculator.js"></script>
+</body>
+</html>

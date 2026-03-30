@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="G-Matrix Systems — RAMAC™ AT2 total cost of ownership (TCO). Commercial proposal for SBT." />
+  <title>RAMAC™ AT2 TCO · G-Matrix for SBT</title>
+  <link rel="stylesheet" href="assets/tco.css" />
+</head>
+<body class="tco-single" data-project="at2">
+  <div class="wrap">
+    <nav class="site-nav" aria-label="Page navigation">
+      <a href="index.html">Home</a>
+      <span class="sep" aria-hidden="true">|</span>
+      <a href="at1l.html">RAMAC AT1L TCO model</a>
+    </nav>
+
+    <section class="hero">
+      <div class="brand-header">
+        <div class="brand-logos">
+          <img src="assets/g-matrix-logo.svg" alt="G-Matrix Systems" class="logo-gms" width="220" height="110" />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img src="assets/ramac-logo.svg" alt="RAMAC" class="logo-ramac" width="200" height="42" />
+        </div>
+        <div class="brand-text">
+          <p class="brand-company">G-Matrix Systems</p>
+          <p class="brand-product">RAMAC™ <span class="brand-product-sub">asset tracking product line</span></p>
+          <p class="brand-audience">Commercial proposal prepared for <strong>SBT</strong></p>
+        </div>
+      </div>
+      <h1>RAMAC™ AT2 — total cost of ownership (TCO)</h1>
+      <p>
+        <strong>Project 2 — AT2</strong> teller machine tracker: powered asset tracker with backup battery, heartbeat, and portal integration; optional door monitoring.
+        <strong>Battery every 18 months</strong>; <strong>enclosure every 2nd service cycle</strong>.
+      </p>
+      <p>
+        Values are editable. Use <strong>per-device</strong> and <strong>fleet</strong> figures as needed. MRQ is validated with a warning below quantity.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Full-width tables</span>
+        <span class="pill">18-month battery cycle</span>
+        <span class="pill">Enclosure every 2nd cycle</span>
+        <span class="pill">Sigfox escalation editable</span>
+      </div>
+    </section>
+
+    <section class="card" id="card-at2">
+      <div class="card-head">
+        <h2>RAMAC™ AT2 — inputs &amp; results</h2>
+        <p class="sub">
+          Teller / ATM use with external antenna variant and optional dry-contact door monitoring.
+          Device once, Sigfox annually, battery every 18 months, enclosure every 2nd cycle.
+        </p>
+      </div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="field">
+            <label for="at2_qty">Quantity</label>
+            <input id="at2_qty" type="number" min="1" step="1" value="500" />
+            <small>Client fleet quantity for AT2.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_years">Years</label>
+            <input id="at2_years" type="number" min="1" max="15" step="1" value="5" />
+            <small>Default is 5 years.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_device">AT2 Unit Price (R)</label>
+            <input id="at2_device" type="number" min="0" step="0.01" value="1893.19" />
+            <small>Quoted at MRQ basis below.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_mrq">MRQ Basis</label>
+            <input id="at2_mrq" type="number" min="1" step="1" value="500" />
+            <small>Price basis: MRQ 500.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_sigfox">Annual Sigfox Fee / Device (R)</label>
+            <input id="at2_sigfox" type="number" min="0" step="0.01" value="481.24" />
+            <small>70 messages/day contract basis.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_sigfox_inc">Sigfox Annual Increase (%)</label>
+            <input id="at2_sigfox_inc" type="number" min="0" step="0.01" value="5.00" />
+            <small>Editable. Default 5%.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_device_inc">Device Annual Increase (%)</label>
+            <input id="at2_device_inc" type="number" min="0" step="0.01" value="5.00" />
+            <small>Indicative repeat-order pricing.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_battery">Battery Cost (R)</label>
+            <input id="at2_battery" type="number" min="0" step="0.01" value="65.00" />
+            <small>Base battery replacement cost.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_battery_inc">Battery Annual Increase (%)</label>
+            <input id="at2_battery_inc" type="number" min="0" step="0.01" value="6.00" />
+            <small>Per 18-month service cycle (1st, 2nd, 3rd…).</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_enclosure">Enclosure Cost (R)</label>
+            <input id="at2_enclosure" type="number" min="0" step="0.01" value="45.00" />
+            <small>Base enclosure replacement cost.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_enclosure_inc">Enclosure Annual Increase (%)</label>
+            <input id="at2_enclosure_inc" type="number" min="0" step="0.01" value="6.00" />
+            <small>Per 18-month service cycle (1st, 2nd, 3rd…).</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_service_months">Service Interval (Months)</label>
+            <input id="at2_service_months" type="number" min="1" step="1" value="18" />
+            <small>Default: every 18 months.</small>
+          </div>
+
+          <div class="field">
+            <label for="at2_enclosure_cycle">Enclosure Swap Every N Cycles</label>
+            <input id="at2_enclosure_cycle" type="number" min="1" step="1" value="2" />
+            <small>AT2 = enclosure every 2nd cycle.</small>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button type="button" onclick="calculateAll()">Recalculate</button>
+          <button type="button" class="secondary" onclick="resetProject()">Reset AT2 defaults</button>
+        </div>
+
+        <div id="at2_mrq_note" class="note"></div>
+        <div id="at2_summary" class="metrics"></div>
+        <div id="at2_breakdown" class="comp-breakdown"></div>
+
+        <h3 class="section-title">Annual fleet cost schedule</h3>
+        <div id="at2_yearly_table"></div>
+
+        <h3 class="section-title">Service event schedule</h3>
+        <div id="at2_service_table"></div>
+
+        <h3 class="section-title">Indicative repeat-order unit pricing</h3>
+        <div id="at2_reorder_table"></div>
+
+        <h3 class="section-title">Cost distribution (model period)</h3>
+        <div id="at2_chart" class="chart"></div>
+      </div>
+    </section>
+
+    <section class="compare-card">
+      <div class="footer-note">
+        <strong>Calculation basis:</strong> device purchase in year 1 only. Sigfox escalates per contract year on the base annual fee.
+        Service costs use per-cycle escalation (<code>base × (1 + rate)^k</code> per service cycle). Enclosure applies only on every 2nd cycle for AT2. Events are allocated to the calendar year of the event month.
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/tco-calculator.js"></script>
+</body>
+</html>
