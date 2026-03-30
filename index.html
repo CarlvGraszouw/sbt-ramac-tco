@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="RAMAC AT1L and AT2 five-year total cost of ownership (TCO) calculator — G-Matrix Systems commercial proposal for SBT." />
-  <title>RAMAC TCO Model · G-Matrix proposal for SBT</title>
+  <meta name="description" content="G-Matrix Systems — RAMAC™ AT1L &amp; AT2 total cost of ownership (TCO) calculator. Commercial proposal for SBT." />
+  <title>RAMAC™ TCO · G-Matrix Systems for SBT</title>
   <style>
     :root {
       --bg: #f5f7fb;
@@ -19,13 +19,22 @@
       --blue: #1e5eff;
       --shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
       --radius: 18px;
+      --fs-body: 0.9375rem;
+      --fs-small: 0.8125rem;
+      --fs-xs: 0.75rem;
+      --fs-h1: 1.75rem;
+      --fs-h2: 1.25rem;
+      --fs-h3: 1.0625rem;
+      --fs-metric: 1.125rem;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, Helvetica, sans-serif;
+      font-size: var(--fs-body);
+      line-height: 1.5;
       background: var(--bg);
       color: var(--text);
     }
@@ -41,31 +50,98 @@
       border: 1px solid var(--line);
       border-radius: 24px;
       box-shadow: var(--shadow);
-      padding: 28px;
+      padding: 28px 32px;
       margin-bottom: 24px;
     }
 
-    .proposal-banner {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--accent-dark);
-      margin: 0 0 12px;
-      padding-bottom: 14px;
+    .brand-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px 32px;
+      padding-bottom: 22px;
+      margin-bottom: 20px;
       border-bottom: 1px solid var(--line);
     }
 
+    .brand-logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px 18px;
+      min-width: 0;
+    }
+
+    .logo-gms {
+      height: 52px;
+      width: auto;
+      max-width: min(220px, 100%);
+      display: block;
+      object-fit: contain;
+    }
+
+    .brand-divider {
+      width: 1px;
+      height: 44px;
+      background: var(--line);
+      flex-shrink: 0;
+    }
+
+    .logo-ramac {
+      height: 42px;
+      width: auto;
+      max-width: min(240px, 100%);
+      display: block;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      flex: 1;
+      min-width: min(100%, 220px);
+    }
+
+    .brand-company {
+      margin: 0;
+      font-size: var(--fs-xs);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .brand-product {
+      margin: 6px 0 0;
+      font-size: var(--fs-h2);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.25;
+    }
+
+    .brand-product-sub {
+      font-weight: 500;
+      color: var(--muted);
+      font-size: var(--fs-body);
+    }
+
+    .brand-audience {
+      margin: 8px 0 0;
+      font-size: var(--fs-body);
+      color: var(--text);
+    }
+
     .hero h1 {
-      margin: 0 0 8px;
-      font-size: 32px;
-      line-height: 1.1;
+      margin: 0 0 10px;
+      font-size: var(--fs-h1);
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text);
     }
 
     .hero p {
-      margin: 6px 0;
+      margin: 8px 0;
       color: var(--muted);
       max-width: 1100px;
+      font-size: var(--fs-body);
     }
 
     .pill-row {
@@ -79,8 +155,8 @@
       background: #fff;
       border: 1px solid var(--line);
       border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 13px;
+      padding: 8px 14px;
+      font-size: var(--fs-small);
       color: var(--muted);
     }
 
@@ -96,35 +172,41 @@
       border: 1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      overflow: hidden;
+      overflow: visible;
+      min-width: 0;
     }
 
     .card-head {
-      padding: 18px 20px;
+      padding: 20px 24px;
       border-bottom: 1px solid var(--line);
       background: linear-gradient(180deg, #fff, #fafbfd);
     }
 
     .card-head h2 {
       margin: 0 0 6px;
-      font-size: 22px;
+      font-size: var(--fs-h2);
+      line-height: 1.3;
     }
 
     .sub {
       margin: 0;
       color: var(--muted);
-      font-size: 14px;
-      line-height: 1.5;
+      font-size: var(--fs-body);
+      line-height: 1.55;
     }
 
     .card-body {
-      padding: 20px;
+      padding: 24px;
     }
 
     .form-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(180px, 1fr));
-      gap: 14px;
+      gap: 16px;
+    }
+
+    .card .form-grid {
+      grid-template-columns: 1fr;
     }
 
     .field {
@@ -134,35 +216,36 @@
     }
 
     .field label {
-      font-size: 13px;
-      color: var(--muted);
-      font-weight: 700;
+      font-size: var(--fs-small);
+      color: var(--text);
+      font-weight: 600;
     }
 
     .field input, .field select {
       width: 100%;
+      min-width: 0;
       border: 1px solid #cfd8e3;
       border-radius: 12px;
-      padding: 11px 12px;
-      font-size: 14px;
+      padding: 10px 12px;
+      font-size: var(--fs-body);
       background: #fff;
       color: var(--text);
     }
 
     .field small {
       color: var(--muted);
-      font-size: 12px;
-      line-height: 1.35;
+      font-size: var(--fs-xs);
+      line-height: 1.4;
     }
 
     .note {
       margin-top: 14px;
-      padding: 12px 14px;
+      padding: 14px 16px;
       border-radius: 12px;
       background: #fff8e8;
       border: 1px solid #f2dfaa;
       color: #7a5600;
-      font-size: 13px;
+      font-size: var(--fs-small);
       line-height: 1.45;
     }
 
@@ -174,37 +257,52 @@
 
     .metrics {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin: 22px 0;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+
+    .compare-card .metrics {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 960px) {
+      .compare-card .metrics {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
     }
 
     .metric {
       background: #fff;
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 16px;
+      border-radius: 14px;
+      padding: 14px 14px;
+      min-width: 0;
     }
 
     .metric .label {
-      font-size: 12px;
+      font-size: var(--fs-xs);
       color: var(--muted);
-      margin-bottom: 6px;
-      text-transform: uppercase;
-      letter-spacing: .03em;
-      font-weight: 700;
+      margin-bottom: 8px;
+      text-transform: none;
+      letter-spacing: 0.02em;
+      font-weight: 600;
+      line-height: 1.35;
+      white-space: normal;
     }
 
     .metric .value {
-      font-size: 24px;
-      font-weight: 800;
-      line-height: 1.1;
+      font-size: var(--fs-metric);
+      font-weight: 700;
+      line-height: 1.25;
+      word-break: break-word;
     }
 
     .metric .detail {
       margin-top: 6px;
       color: var(--muted);
-      font-size: 12px;
+      font-size: var(--fs-xs);
+      line-height: 1.35;
     }
 
     table {
@@ -221,19 +319,22 @@
       background: #f8fafc;
       color: #334155;
       text-align: left;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .03em;
-      padding: 12px 10px;
+      font-size: var(--fs-xs);
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0.01em;
+      padding: 12px 12px;
       border-bottom: 1px solid var(--line);
-      white-space: nowrap;
+      white-space: normal;
+      vertical-align: bottom;
     }
 
     tbody td {
-      padding: 11px 10px;
+      padding: 12px 12px;
       border-bottom: 1px solid #edf2f7;
-      font-size: 14px;
+      font-size: var(--fs-body);
       vertical-align: top;
+      word-break: break-word;
     }
 
     tbody tr:last-child td { border-bottom: 0; }
@@ -245,7 +346,7 @@
       display: inline-block;
       border-radius: 999px;
       padding: 5px 9px;
-      font-size: 11px;
+      font-size: var(--fs-xs);
       font-weight: 700;
       border: 1px solid var(--line);
       background: #fff;
@@ -273,8 +374,10 @@
     }
 
     .section-title {
-      margin: 26px 0 10px;
-      font-size: 18px;
+      margin: 24px 0 12px;
+      font-size: var(--fs-h3);
+      font-weight: 700;
+      line-height: 1.35;
     }
 
     .compare-card {
@@ -283,12 +386,12 @@
       border: 1px solid var(--line);
       border-radius: 20px;
       box-shadow: var(--shadow);
-      padding: 20px;
+      padding: 24px 28px;
     }
 
     .footer-note {
       margin-top: 18px;
-      font-size: 13px;
+      font-size: var(--fs-small);
       color: var(--muted);
       line-height: 1.6;
     }
@@ -352,15 +455,19 @@
 
     @media (max-width: 1180px) {
       .grid-2 { grid-template-columns: 1fr; }
-      .metrics { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 720px) {
       .form-grid { grid-template-columns: 1fr; }
       .metrics { grid-template-columns: 1fr; }
+      .compare-card .metrics { grid-template-columns: 1fr; }
       .bar-row { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 26px; }
-      .wrap { padding: 14px; }
+      .hero h1 { font-size: 1.5rem; }
+      .wrap { padding: 16px; }
+      .hero { padding: 20px; }
+      .brand-header { flex-direction: column; align-items: flex-start; }
+      .exec-grid { grid-template-columns: 1fr; }
+      .exec-summary { padding: 20px; }
     }
 
     .exec-summary {
@@ -368,28 +475,28 @@
       border: 1px solid var(--line);
       border-radius: 24px;
       box-shadow: var(--shadow);
-      padding: 28px;
+      padding: 28px 32px;
       margin-bottom: 24px;
     }
 
     .exec-summary .exec-kicker {
-      font-size: 13px;
+      font-size: var(--fs-xs);
       font-weight: 700;
       color: var(--accent);
       letter-spacing: .04em;
       text-transform: uppercase;
-      margin: 0 0 6px;
+      margin: 0 0 8px;
     }
 
     .exec-summary h2.exec-title {
-      margin: 0 0 8px;
-      font-size: 26px;
-      line-height: 1.2;
+      margin: 0 0 10px;
+      font-size: var(--fs-h1);
+      line-height: 1.25;
     }
 
     .exec-meta {
       color: var(--muted);
-      font-size: 14px;
+      font-size: var(--fs-body);
       margin: 0 0 22px;
     }
 
@@ -409,15 +516,16 @@
 
     .exec-panel h3 {
       margin: 0 0 10px;
-      font-size: 17px;
+      font-size: var(--fs-h3);
       color: var(--text);
+      line-height: 1.35;
     }
 
     .exec-panel ul {
       margin: 0;
-      padding-left: 18px;
+      padding-left: 20px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: var(--fs-body);
       line-height: 1.55;
     }
 
@@ -437,13 +545,13 @@
 
     .insight-line {
       margin-top: 12px;
-      padding: 12px 14px;
+      padding: 14px 16px;
       border-radius: 12px;
       background: #f0f4ff;
       border: 1px solid #d8e4ff;
       color: #1e3a5f;
-      font-size: 13px;
-      line-height: 1.45;
+      font-size: var(--fs-small);
+      line-height: 1.5;
     }
 
     @media print {
@@ -460,17 +568,27 @@
 <body>
   <div class="wrap">
     <section class="hero">
-      <p class="proposal-banner">G-Matrix Systems · Commercial proposal for SBT</p>
-      <h1>RAMAC™ Total Cost of Ownership Model</h1>
+      <div class="brand-header">
+        <div class="brand-logos">
+          <img src="assets/g-matrix-logo.svg" alt="G-Matrix Systems" class="logo-gms" width="220" height="110" />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <img src="assets/ramac-logo.svg" alt="RAMAC" class="logo-ramac" width="200" height="42" />
+        </div>
+        <div class="brand-text">
+          <p class="brand-company">G-Matrix Systems</p>
+          <p class="brand-product">RAMAC™ <span class="brand-product-sub">asset tracking product line</span></p>
+          <p class="brand-audience">Commercial proposal prepared for <strong>SBT</strong></p>
+        </div>
+      </div>
+      <h1>Total cost of ownership (TCO) model</h1>
       <p>
-        Interactive commercial model for two projects:
-        <strong>Project 1: RAMAC AT1L</strong> (compact recovery / secondary tracker for cash-bag use, daily heartbeat, low-power design) and
-        <strong>Project 2: RAMAC AT2</strong> (powered smart asset tracker with internal battery backup, heartbeat, and portal integration).
+        <strong>G-Matrix Systems</strong> presents this interactive TCO model for the <strong>RAMAC™</strong> range:
+        <strong>AT1L</strong> (compact recovery / secondary tracker for cash-bag use, daily heartbeat, low-power design) and
+        <strong>AT2</strong> (powered smart asset tracker with internal battery backup, heartbeat, and portal integration).
       </p>
       <p>
-        This model is built on the commercial assumptions supplied by G-Matrix. All values remain editable.
-        Pricing is shown on both a <strong>per-device</strong> basis and a <strong>fleet total</strong> basis.
-        Unit prices are validated against <strong>MRQ</strong> with a warning if quantity is below MRQ (no forced tiered table—adjust pricing manually if needed).
+        Commercial assumptions are editable. Pricing is shown on both a <strong>per-device</strong> basis and a <strong>fleet total</strong> basis.
+        Unit prices are checked against <strong>MRQ</strong> with a warning if quantity is below MRQ (no forced tiered table—adjust pricing manually if needed).
         Sigfox annual escalation is editable (default <strong>5%</strong>) for scenarios where current commercial terms apply to a fixed date (e.g. Feb 2027) and increase thereafter.
       </p>
       <div class="pill-row">
@@ -483,9 +601,9 @@
     </section>
 
     <section class="exec-summary" aria-label="Client evaluation summary">
-      <p class="exec-kicker">5-Year Cost of Ownership (TCO)</p>
-      <h2 class="exec-title">RAMAC™ Asset Tracking Solutions</h2>
-      <p class="exec-meta">Prepared for client evaluation · Model period: <strong>60 months (5 years)</strong> — align the <strong>Years</strong> field to match when comparing to this narrative.</p>
+      <p class="exec-kicker">5-year cost of ownership (TCO)</p>
+      <h2 class="exec-title">RAMAC™ asset tracking — executive summary</h2>
+      <p class="exec-meta">G-Matrix Systems · prepared for <strong>SBT</strong> · Model period: <strong>60 months (5 years)</strong> — align the <strong>Years</strong> field when comparing to this narrative.</p>
 
       <div class="exec-grid">
         <div class="exec-panel">

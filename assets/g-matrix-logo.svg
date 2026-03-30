@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_2"
+   data-name="Layer 2"
+   viewBox="0 0 400 200.00001"
+   version="1.1"
+   sodipodi:docname="GMS Logo.svg"
+   width="400"
+   height="200"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview65"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.3921799"
+     inkscape:cx="105.94895"
+     inkscape:cy="207.94726"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_2"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .cls-1 {
+        fill: #d6f402;
+      }
+
+      .cls-2 {
+        fill: #fc7302;
+      }
+
+      .cls-3 {
+        fill: #019797;
+      }
+
+      .cls-4 {
+        fill: #059898;
+      }
+
+      .cls-5 {
+        fill: #fc7606;
+      }
+
+      .cls-6 {
+        fill: #fc7301;
+      }
+
+      .cls-7 {
+        fill: #fc7403;
+      }
+
+      .cls-8 {
+        fill: #039898;
+      }
+
+      .cls-9 {
+        fill: #029797;
+      }
+
+      .cls-10 {
+        fill: #353631;
+      }
+
+      .cls-11 {
+        fill: #343531;
+      }
+
+      .cls-12 {
+        fill: #343530;
+      }
+
+      .cls-13 {
+        fill: #d7f405;
+      }
+
+      .cls-14 {
+        fill: #049898;
+      }
+
+      .cls-15 {
+        fill: #d6f401;
+      }
+    </style>
+  </defs>
+  <rect
+     style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.95622;stroke-linejoin:round"
+     id="rect1"
+     width="548.06134"
+     height="395.7822"
+     x="-74.032104"
+     y="-81.958778" />
+  <g
+     id="g1"
+     transform="translate(12.385351,7.3267385)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.387px;line-height:0%;font-family:AdelonSerial;-inkscape-font-specification:AdelonSerial;text-align:center;letter-spacing:-0.218949px;word-spacing:0px;text-anchor:middle;fill:#009896;fill-opacity:1;fill-rule:evenodd;stroke:#009896;stroke-width:0.479023;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="178.06744"
+       y="186.60291"
+       id="text66"
+       transform="scale(1.0414069,0.96023946)"
+       inkscape:export-filename="GMS Logo_GRAY.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan66"
+         x="177.95796"
+         y="186.60291"
+         style="letter-spacing:-0.218949px;word-spacing:0px;fill:#009896;fill-opacity:1;stroke:#009896;stroke-width:0.479023;stroke-dasharray:none;stroke-opacity:1"
+         dx="4.0206971 2.2243001">I<tspan
+   style="letter-spacing:-0.218949px;word-spacing:0px;fill:#009896;fill-opacity:1;stroke:#009896;stroke-width:0.479023;stroke-dasharray:none;stroke-opacity:1"
+   id="tspan69"
+   dx="0.65684658">ntegrated System Design</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:52.7808px;line-height:0%;font-family:Nunito;-inkscape-font-specification:Nunito;text-align:center;letter-spacing:0px;word-spacing:10.8126px;text-anchor:middle;fill:#343530;fill-opacity:1;fill-rule:evenodd;stroke:#343530;stroke-width:0.895085;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="194.31558"
+       y="131.05179"
+       id="text65"
+       transform="scale(1.0034495,0.99656235)"><tspan
+         sodipodi:role="line"
+         id="tspan65"
+         x="194.31558"
+         y="131.05179"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:AdelonSerial;-inkscape-font-specification:AdelonSerial;letter-spacing:0px;word-spacing:10.8126px;fill:#343530;fill-opacity:1;stroke:#343530;stroke-width:0.895085;stroke-dasharray:none;stroke-opacity:1"
+         dx="-14.74443">G-Matrix Systems</tspan></text>
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.131919"
+       id="path126-1-0"
+       cx="76.906158"
+       cy="117.84884"
+       rx="1.2051219"
+       ry="5.8924103"
+       transform="matrix(0.86682321,-0.49861561,0.49456028,0.86914333,0,0)" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.210101"
+       id="path126-1-06"
+       cx="57.965652"
+       cy="128.28523"
+       rx="2.3840454"
+       ry="7.5553517"
+       transform="matrix(0.88759093,-0.46063255,0.64864191,0.76109373,0,0)" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.303444"
+       id="path126-1-5"
+       cx="67.916733"
+       cy="143.1767"
+       rx="5.3267179"
+       ry="7.0535097"
+       transform="matrix(0.82783497,-0.56097171,0.64131661,0.76727636,0,0)" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.366922"
+       id="path126-1-9"
+       cx="165.95476"
+       cy="66.799461"
+       rx="7.3633971"
+       ry="7.4607892" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.386965"
+       id="path126-1-4"
+       cx="161.30656"
+       cy="-125.26304"
+       rx="7.3728466"
+       ry="8.287365"
+       transform="matrix(0.5475895,0.83674712,-0.78290422,0.62214225,0,0)" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.326255"
+       id="path126-1-7"
+       cx="214.32854"
+       cy="96.928032"
+       rx="6.0808306"
+       ry="7.1426558"
+       transform="matrix(0.97135364,-0.23763859,-0.03130478,0.99950989,0,0)" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.23087"
+       id="path126-1-1"
+       cx="220.6523"
+       cy="26.826588"
+       rx="3.9006445"
+       ry="5.5758333"
+       transform="matrix(0.99856602,0.05353414,-0.05295857,0.99859671,0,0)" />
+    <ellipse
+       style="fill:#d7f501;fill-opacity:1;stroke-width:0.139946"
+       id="path126-1-71"
+       cx="230.73126"
+       cy="-2.8974335"
+       rx="2.0397592"
+       ry="3.9179435"
+       transform="matrix(0.984995,0.17258287,0.09342832,0.99562601,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.130376"
+       id="path126-1-069"
+       cx="269.42285"
+       cy="273.59583"
+       rx="1.4003853"
+       ry="4.9529686"
+       transform="matrix(0.52056224,-0.85382372,0.32369616,0.94616108,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.195614"
+       id="path126-1-6"
+       cx="199.7139"
+       cy="63.969997"
+       rx="2.5659125"
+       ry="6.0851283"
+       transform="matrix(0.98387336,-0.17886645,0.39010194,0.92077168,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.307412"
+       id="path126-1-03"
+       cx="184.02979"
+       cy="108.80859"
+       rx="5.1376352"
+       ry="7.5057001"
+       transform="matrix(0.90842288,-0.41805248,0.38566215,0.92264007,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.389192"
+       id="path126-1-42"
+       cx="193.66531"
+       cy="3.671216"
+       rx="7.2881856"
+       ry="8.4805374"
+       transform="matrix(0.99075884,0.13563528,-0.13419928,0.99095436,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.438054"
+       id="path126-1-3"
+       cx="174.18028"
+       cy="-7.7073236"
+       rx="7.7611709"
+       ry="10.088911"
+       transform="matrix(0.96263564,0.27079998,-0.38541568,0.92274306,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.366085"
+       id="path126-1-8"
+       cx="150.51688"
+       cy="50.066463"
+       rx="6.6395788"
+       ry="8.2363005" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.270316"
+       id="path126-1-62"
+       cx="110.96512"
+       cy="97.635941"
+       rx="4.4742041"
+       ry="6.6640272"
+       transform="matrix(0.94242539,-0.33441649,0.31617905,0.94869954,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.174971"
+       id="path126-1-80"
+       cx="103.22404"
+       cy="63.195122"
+       rx="2.1115534"
+       ry="5.9162025"
+       transform="matrix(0.99927368,-0.03810658,0.35637648,0.93434244,0,0)" />
+    <ellipse
+       style="fill:#fc7300;fill-opacity:1;stroke-width:0.0942409"
+       id="path126-1-68"
+       cx="106.77727"
+       cy="57.169514"
+       rx="0.74089742"
+       ry="4.8914528"
+       transform="matrix(0.9981234,-0.06123456,0.23297064,0.97248377,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.10699"
+       id="path126-1-16"
+       cx="115.71652"
+       cy="55.515923"
+       rx="1.3054219"
+       ry="3.5780678"
+       transform="matrix(0.99337166,-0.1149467,0.11372361,0.99351243,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.195577"
+       id="path126-1-90"
+       cx="127.38107"
+       cy="40.532566"
+       rx="3.0599535"
+       ry="5.1006985" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.291581"
+       id="path126-1-18"
+       cx="142.6069"
+       cy="-6.4507818"
+       rx="4.9029598"
+       ry="7.075737"
+       transform="matrix(0.95977565,0.28076806,-0.2699333,0.96287902,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.364573"
+       id="path126-1-18-8"
+       cx="150.89044"
+       cy="-34.760639"
+       rx="6.5381303"
+       ry="8.2951908"
+       transform="matrix(0.93199155,0.36248001,-0.4247193,0.90532509,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.381262"
+       id="path126-1-18-8-1"
+       cx="162.84555"
+       cy="-44.819309"
+       rx="7.178597"
+       ry="8.2626476"
+       transform="matrix(0.94760533,0.31944348,-0.47600432,0.87944294,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.322295"
+       id="path126-1-18-8-1-3"
+       cx="60.62804"
+       cy="195.03767"
+       rx="5.958014"
+       ry="7.11409"
+       transform="matrix(0.19236481,-0.98132348,0.94134223,0.3374534,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.255965"
+       id="path126-1-18-8-1-3-8"
+       cx="-48.403179"
+       cy="190.81738"
+       rx="6.3624921"
+       ry="4.2018981"
+       transform="matrix(-0.49256622,-0.87027497,0.98216972,-0.18799637,0,0)" />
+    <ellipse
+       style="fill:#009896;fill-opacity:1;stroke-width:0.177134"
+       id="path126-1-18-8-1-3-8-7"
+       cx="-274.13116"
+       cy="217.80046"
+       rx="5.9522777"
+       ry="2.1509352"
+       transform="matrix(-0.58849709,-0.80849934,0.28275726,-0.9591915,0,0)" />
+  </g>
+</svg>
